@@ -1,0 +1,20 @@
+.logo {
+  background: papayawhip;
+  height: 30px;
+}
+nav {
+  background: olivedrab;
+  height: 30px;
+}
+article {
+  background: rebeccapurple;
+  height: 200px;
+}
+.widget {
+  background: royalblue;
+  height: 150px;
+}
+footer {
+  background: salmon;
+  height: 80px;
+}
