@@ -1,0 +1,76 @@
+.buttongroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+  max-width: 48rem;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: #f3f4f6;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.625rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  border: 1px solid;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(65, 164, 169, 0.4);
+}
+
+.button-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.button-primary:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.button-primary svg {
+  width: 1rem;
+  height: 1rem;
+  margin-left: -0.125rem;
+  margin-right: 0.5rem;
+}
+
+.button-secondary {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: white;
+}
+
+.button-secondary:hover {
+  color: var(--primary-color-dark);
+  border: 1px solid var(--primary-color-dark);
+}
+
+.button-tertiary {
+  color: var(--primary-gray);
+  border: 1px solid var(--primary-gray);
+  background-color: white;
+}
+
+.button-tertiary:hover {
+  color: var(--primary-gray-dark);
+  border: 1px solid var(--primary-gray-dark);
+}
+
+@media (min-width: 640px) {
+  .buttongroup {
+    justify-content: flex-start;
+    flex-flow: row-reverse;
+    gap: 1rem;
+  }
+}
