@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #41a4a9;
+  --primary-color-dark: #2d7f84;
+  --primary-gray: #919191;
+  --primary-gray-dark: #6a6a6a;
+  --light-gray-bg: #e5e7eb;
+  --element-spacing: 15px;
+  --wrapper: 1400px;
+}
+
+body {
+  font-size: 16px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 90vw;
+  width: clamp(16rem, 90vw, var(--wrapper));
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.horizontal-flow > * + * {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(var(--element-spacing) * var(--tw-space-x-reverse));
+  margin-left: calc(
+    var(--element-spacing) * calc(1 - var(--tw-space-x-reverse))
+  );
+}
+
+.vertical-flow > * + * {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(
+    var(--element-spacing) * calc(1 - var(--tw-space-y-reverse))
+  );
+  margin-bottom: calc(var(--element-spacing) * var(--tw-space-y-reverse));
+}
+
+.element-shadow {
+  --tw-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
